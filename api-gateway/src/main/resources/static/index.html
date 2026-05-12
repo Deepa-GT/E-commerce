@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-commerce Microservices Dashboard</title>
+    <style>
+        body { font-family: sans-serif; margin: 40px; line-height: 1.6; }
+        .service-card { border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
+        h1 { color: #333; }
+        .status-up { color: green; font-weight: bold; }
+        code { background: #f4f4f4; padding: 2px 5px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h1>E-commerce Microservices - System Status</h1>
+    <p>The backend services are running. You can verify them below:</p>
+    
+    <div class="service-card">
+        <h3>1. Service Discovery (Eureka)</h3>
+        <p>Dashboard: <a href="http://localhost:8761" target="_blank">http://localhost:8761</a></p>
+        <p>Status: <span class="status-up">UP</span></p>
+    </div>
+
+    <div class="service-card">
+        <h3>2. API Gateway</h3>
+        <p>Endpoint: <code>http://localhost:8900/</code></p>
+        <p>This is the main entry point for all microservices.</p>
+    </div>
+
+    <div class="service-card">
+        <h3>3. Available Endpoints (via Gateway)</h3>
+        <ul>
+            <li>User Service: <a href="http://localhost:8900/accounts/users" target="_blank">/accounts/users</a></li>
+            <li>Product Catalog: <a href="http://localhost:8900/catalog/products" target="_blank">/catalog/products</a></li>
+        </ul>
+        <p><i>Note: These might return empty JSON or 404 if no data is seeded in H2 database yet.</i></p>
+    </div>
+
+    <p><b>Note:</b> This repository contains the backend microservices. There is no frontend (UI) included in this specific codebase.</p>
+</body>
+</html>
