@@ -1,0 +1,84 @@
+2026-05-12 21:50:35.421  INFO 30132 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$58616a36] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.5.RELEASE)
+
+2026-05-12 21:50:40.381  INFO 30132 --- [           main] c.r.o.OrderServiceApplication            : No active profile set, falling back to default profiles: default
+2026-05-12 21:50:46.412  INFO 30132 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2026-05-12 21:50:46.414  INFO 30132 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2026-05-12 21:50:48.378  INFO 30132 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1871ms. Found 2 repository interfaces.
+2026-05-12 21:50:49.171  INFO 30132 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2026-05-12 21:50:49.176  INFO 30132 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2026-05-12 21:50:49.267  INFO 30132 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.rainbowforest.orderservice.repository.ItemRepository.
+2026-05-12 21:50:49.271  INFO 30132 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.rainbowforest.orderservice.repository.OrderRepository.
+2026-05-12 21:50:49.271  INFO 30132 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47ms. Found 0 repository interfaces.
+2026-05-12 21:50:52.202  INFO 30132 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bd5460a3-b273-3cc2-85da-8bee3028338b
+2026-05-12 21:50:52.579  INFO 30132 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.rainbowforest.orderservice.feignclient.ProductClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-05-12 21:50:52.589  INFO 30132 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.rainbowforest.orderservice.feignclient.UserClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-05-12 21:50:53.896  INFO 30132 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3c476739] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-05-12 21:50:54.178  INFO 30132 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$58616a36] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-05-12 21:51:02.083  INFO 30132 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8813 (http)
+2026-05-12 21:51:02.281  INFO 30132 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-12 21:51:02.283  INFO 30132 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2026-05-12 21:51:03.604  INFO 30132 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-12 21:51:03.607  INFO 30132 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 22941 ms
+2026-05-12 21:51:05.999  INFO 30132 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-12 21:51:09.909  INFO 30132 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-12 21:51:10.878  INFO 30132 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2026-05-12 21:51:11.578  INFO 30132 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2026-05-12 21:51:11.588  INFO 30132 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2026-05-12 21:51:16.283  INFO 30132 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2026-05-12 21:51:24.276  INFO 30132 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Hibernate: create table cart (order_id bigint not null, item_id bigint not null)
+Hibernate: create table items (id bigint generated by default as identity, quantity integer not null, subtotal decimal(19,2) not null, product_id bigint, primary key (id))
+Hibernate: create table orders (id bigint generated by default as identity, ordered_date date not null, status varchar(255) not null, total decimal(19,2), user_id bigint, primary key (id))
+Hibernate: create table products (product_id bigint generated by default as identity, price decimal(19,2) not null, product_name varchar(255) not null, primary key (product_id))
+Hibernate: create table users (id bigint generated by default as identity, user_name varchar(255) not null, primary key (id))
+Hibernate: alter table cart add constraint FKbppq5g7sqgpwuccri630s8k5m foreign key (item_id) references items
+Hibernate: alter table cart add constraint FK3xdjlr8pvm6waf3brpkvrcc6d foreign key (order_id) references orders
+Hibernate: alter table items add constraint FKmtk37pxnx7d5ck7fkq2xcna4i foreign key (product_id) references products
+Hibernate: alter table orders add constraint FK32ql8ubntj5uh44ph9659tiih foreign key (user_id) references users
+2026-05-12 21:51:42.260  INFO 30132 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-12 21:51:50.737  INFO 30132 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 11e8b17b-23df-4482-9a66-c158edc9340e
+
+2026-05-12 21:51:52.651  INFO 30132 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e692555, org.springframework.security.web.context.SecurityContextPersistenceFilter@16aed49f, org.springframework.security.web.header.HeaderWriterFilter@712c5463, org.springframework.security.web.csrf.CsrfFilter@76d72b5b, org.springframework.security.web.authentication.logout.LogoutFilter@1e977098, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2c9a6717, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6e03db1f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3ba0ae41, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6d091cad, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c479fdf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@670f2466, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76fe6cdc, org.springframework.security.web.session.SessionManagementFilter@2f14b0f6, org.springframework.security.web.access.ExceptionTranslationFilter@7d17ee50, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3bf54172]
+2026-05-12 21:51:52.905  WARN 30132 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2026-05-12 21:51:52.907  INFO 30132 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2026-05-12 21:51:52.945  WARN 30132 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2026-05-12 21:51:52.948  INFO 30132 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2026-05-12 21:51:54.849  INFO 30132 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2026-05-12 21:51:55.218  WARN 30132 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-12 21:52:03.415  INFO 30132 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-05-12 21:52:04.120  INFO 30132 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-05-12 21:52:09.181  INFO 30132 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-05-12 21:52:09.254  INFO 30132 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-05-12 21:52:12.563  INFO 30132 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-05-12 21:52:12.634  INFO 30132 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-05-12 21:52:15.712  INFO 30132 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-12 21:52:16.468  INFO 30132 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-05-12 21:52:16.478  INFO 30132 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-05-12 21:52:16.484  INFO 30132 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-05-12 21:52:16.492  INFO 30132 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-05-12 21:52:16.502  INFO 30132 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-05-12 21:52:16.512  INFO 30132 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-05-12 21:52:16.520  INFO 30132 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-05-12 21:52:17.743  INFO 30132 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-05-12 21:52:17.763  INFO 30132 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-05-12 21:52:17.778  INFO 30132 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-05-12 21:52:17.797  INFO 30132 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1778602937792 with initial instances count: 2
+2026-05-12 21:52:17.807  INFO 30132 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDER-SERVICE with eureka with status UP
+2026-05-12 21:52:17.816  INFO 30132 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1778602937816, current=UP, previous=STARTING]
+2026-05-12 21:52:17.827  INFO 30132 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/Admin:order-service:8813: registering service...
+2026-05-12 21:52:18.378  INFO 30132 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/Admin:order-service:8813 - registration status: 204
+2026-05-12 21:52:26.696  INFO 30132 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8813 (http) with context path ''
+2026-05-12 21:52:26.711  INFO 30132 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8813
+2026-05-12 21:52:26.735  INFO 30132 --- [           main] c.r.o.OrderServiceApplication            : Started OrderServiceApplication in 119.16 seconds (JVM running for 123.147)
