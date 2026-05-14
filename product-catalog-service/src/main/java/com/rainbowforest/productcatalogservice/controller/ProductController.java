@@ -18,6 +18,11 @@ public class ProductController {
     @Autowired
     private HeaderGenerator headerGenerator;
 
+    @GetMapping("/")
+    public String index() {
+        return "Product Catalog Service is running. Visit <a href='/products'>/products</a> for data or <a href='http://localhost:8900'>Dashboard</a>.";
+    }
+
     @GetMapping (value = "/products")
     public ResponseEntity<List<Product>> getAllProducts(){
         List<Product> products =  productService.getAllProduct();

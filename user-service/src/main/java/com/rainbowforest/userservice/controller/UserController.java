@@ -18,6 +18,11 @@ public class UserController {
     
     @Autowired
     private HeaderGenerator headerGenerator;
+
+    @GetMapping("/")
+    public String index() {
+        return "User Service is running. Visit <a href='/users'>/users</a> for data or <a href='http://localhost:8900'>Dashboard</a>.";
+    }
     
     @GetMapping (value = "/users")
     public ResponseEntity<List<User>> getAllUsers(){
